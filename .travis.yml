@@ -8,7 +8,7 @@ services:
   - docker
 
 env:
-  - DOCKER_COMPOSE_VERSION=3.3
+  - DOCKER_COMPOSE_VERSION=1.25.3
 
 before_install:
   - sudo rm /usr/local/bin/docker-compose
@@ -23,7 +23,7 @@ install:
   - docker-compose up
   - docker ps
 
-after_install:
+script:
   - docker-compose stop
   - docker-compose rm -f
 
