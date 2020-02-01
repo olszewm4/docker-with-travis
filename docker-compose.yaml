@@ -11,7 +11,7 @@ services:
   service-app:
     build: 
       context: .
-      dockerfile: /Service-App/Dockerfile
+      dockerfile: ./Service-App/Dockerfile
     image: olszewm4/docker-with-travis.service-app:latest
     ports:
     - "5001:80"
