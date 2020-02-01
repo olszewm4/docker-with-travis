@@ -2,6 +2,6 @@
 {
     public class ServiceConfiguration
     {
-        public string Url { get; set; }
+        public virtual string Url { get; set; }
     }
 }

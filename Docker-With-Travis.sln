@@ -3,17 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29503.13
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service-App", "Service-App\Service-App.csproj", "{6095EB80-86FE-4E26-A808-9F6900D32BBF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service-App", "Service-App\Service-App.csproj", "{6095EB80-86FE-4E26-A808-9F6900D32BBF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client-App", "Client-App\Client-App.csproj", "{2803F9B7-23D7-445B-B981-73ACF0531CA6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Client-App", "Client-App\Client-App.csproj", "{2803F9B7-23D7-445B-B981-73ACF0531CA6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Db-Service", "Db-Service\Db-Service.csproj", "{92099C78-CB9D-4A52-8F35-08EAE30B0BE0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Db-Service", "Db-Service\Db-Service.csproj", "{92099C78-CB9D-4A52-8F35-08EAE30B0BE0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C4E64C51-A78C-4F96-AFC3-19AA433B80A5}"
 	ProjectSection(SolutionItems) = preProject
-		.travis.yaml = .travis.yaml
+		.travis.yml = .travis.yml
 		docker-compose.yaml = docker-compose.yaml
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{7C5DCAF7-2725-4DA0-9E9C-5406A7670D40}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{92099C78-CB9D-4A52-8F35-08EAE30B0BE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{92099C78-CB9D-4A52-8F35-08EAE30B0BE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{92099C78-CB9D-4A52-8F35-08EAE30B0BE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C5DCAF7-2725-4DA0-9E9C-5406A7670D40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C5DCAF7-2725-4DA0-9E9C-5406A7670D40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C5DCAF7-2725-4DA0-9E9C-5406A7670D40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C5DCAF7-2725-4DA0-9E9C-5406A7670D40}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
