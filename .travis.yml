@@ -28,7 +28,7 @@ script:
   - docker-compose rm -f
 
 before_deploy:
-  - docker login -u ${DOCKER_HUB_PASSWORD}  -p ${DOCKER_HUB_USERNAME}
+  - docker login -u "${DOCKER_HUB_USERNAME}" -p "${DOCKER_HUB_PASSWORD}"
 
 deploy:
   provider: script
