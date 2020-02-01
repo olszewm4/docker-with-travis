@@ -1,0 +1,25 @@
+env:
+  - DOCKER_COMPOSE_VERSION=3.3
+
+before_install:
+  - sudo rm /usr/local/bin/docker-compose
+  - curl -L https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-`uname -s`-`uname -m` > docker-compose
+  - chmod +x docker-compose
+  - sudo mv docker-compose /usr/local/bin
+
+sudo: required
+services:
+  - docker
+  - docker-compose
+
+script:
+  - docker-compose build
+
+before_deploy:
+  - docker login -u ${DOCKER_HUB_PASSWORD}  -p ${DOCKER_HUB_USERNAME}
+
+deploy:
+  provider: script
+  script: docker-compose push
+  on:
+    branch: master
