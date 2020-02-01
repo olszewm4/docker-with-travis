@@ -1,7 +1,9 @@
 version: '3.3'
 services:
   client-app:
-    build: ./Client-App
+    build: 
+      context: .
+      dockerfile: ./Client-App/Dockerfile
     image: olszewm4/docker-with-travis.client-app:latest
     ports:
     - "5000:80"
