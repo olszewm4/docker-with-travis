@@ -4,7 +4,7 @@ services:
     build: 
       context: .
       dockerfile: ./Client-App/Dockerfile
-    image: olszewm4/docker-with-travis.client-app:latest
+    image: olszewm4/docker-with-travis.client-app:v1
     ports:
     - "5000:80"
     depends_on:
@@ -14,7 +14,7 @@ services:
     build: 
       context: .
       dockerfile: ./Service-App/Dockerfile
-    image: olszewm4/docker-with-travis.service-app:latest
+    image: olszewm4/docker-with-travis.service-app:v1
     ports:
     - "5001:80"
     depends_on:
