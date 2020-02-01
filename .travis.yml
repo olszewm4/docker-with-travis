@@ -20,7 +20,7 @@ before_install:
 install:
   - sudo apt-get update
   - docker-compose build
-  - docker-compose up
+  - docker-compose up -d
   - docker ps
 
 script:
